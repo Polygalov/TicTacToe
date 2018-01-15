@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  xmlns:tools="http://schemas.android.com/tools"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:background="#ccffff"
+                  android:layout_gravity="center_horizontal">
+
+
+    <TextView
+        android:text="Крестики-нолики"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textStyle="normal|bold"
+        android:gravity="center"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+    <Button
+        android:text="1 игрок"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn1player"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <Button
+        android:text="2 игрока"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn2player"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:text="Сложность"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textStyle="normal|bold"
+                android:textSize="18sp"/>
+
+            <RadioButton
+                android:text="Легко"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioButtonEasy"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"/>
+
+        <RadioButton
+            android:text="Сложно"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/radioButtonHard"
+            android:gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_marginLeft="50dp"/>
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Первый ход"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"/>
+
+            <RadioButton
+                android:text="Игрок"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_player"
+                android:layout_weight="1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"/>
+
+            <RadioButton
+                android:text="Android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rb_android"
+                android:layout_weight="1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="15dp"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:gravity="bottom">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/off"
+            android:id="@+id/exit"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:clickable="true"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="50dp"
+            android:gravity="bottom"
+            android:layout_marginBottom="12dp">
+
+            <ToggleButton
+                android:id="@+id/toggleButton"
+                android:layout_gravity="right"
+                android:background="@drawable/ic_toggle_bg"
+                android:textOn=""
+                android:textOff=""
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginBottom="12dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

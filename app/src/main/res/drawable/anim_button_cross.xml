@@ -1,0 +1,13 @@
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/loading"
+                android:oneshot="false" >
+    <item android:drawable="@drawable/cross1" android:duration="120"/>
+    <item android:drawable="@drawable/cross2" android:duration="120"/>
+    <item android:drawable="@drawable/cross3" android:duration="120"/>
+    <item android:drawable="@drawable/cross4" android:duration="120"/>
+    <item android:drawable="@drawable/cross5" android:duration="120"/>
+    <item android:drawable="@drawable/cross6" android:duration="120"/>
+    <item android:drawable="@drawable/cross7" android:duration="120"/>
+    <item android:drawable="@drawable/cross8" android:duration="120"/>
+    <item android:drawable="@drawable/cross9" android:duration="120"/>
+</animation-list>

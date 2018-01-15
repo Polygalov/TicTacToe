@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Крестики-нолики</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="action_help">Статистика</string>
+    <string name="action_sounds">Звуки</string>
+    <string name="message_text">Статистика</string>
+    <string name="restart">Сброс статистики</string>
+    <string name="exit">Выйти</string>
+    <string name="name">Имя</string>
+    <string name="learn_words">Проигрышей</string>
+    <string name="scores_stat">ничьих</string>
+    <string name="toy">легко Х</string>
+    <string name="pairs">Трудно X</string>
+</resources>
